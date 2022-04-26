@@ -1,0 +1,18 @@
+directories:
+  .
+
+# Automatically includes all relevant targets under the 'directories' above
+derive_targets_from_directories: true
+
+targets:
+  //...:all
+
+additional_languages:
+  # Uncomment any additional languages you want supported
+  # android
+  # dart
+  go
+  kotlin
+  # python
+  # scala
+  # typescript

@@ -1,0 +1,14 @@
+load("@com_github_bazelbuild_buildtools//buildifier:def.bzl", "buildifier")
+load("@bazel_gazelle//:def.bzl", "gazelle")
+load("@io_bazel_rules_go//go:def.bzl", "nogo")
+
+# buildifier is used for pretty-printing of `bazel run` output.
+buildifier(
+    name = "buildifier",
+)
+
+# gazelle:prefix github.com/edposinitckii-hf/bazel-gotest-unsynced
+# gazelle:exclude vendor
+gazelle(
+    name = "gazelle",
+)
